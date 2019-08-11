@@ -1,0 +1,8 @@
+{
+  "name": "cogear-plugin-base-url",
+  "description": "Cogear.JS base URL plugin.",
+  "version": "1.0.0",
+  "author": "Pacharapol Withayasakpunt<patarapolw@gmail.com>",
+  "homepage": "https://github.com/patarapolw/cogear-plugin-base-url",
+  "main": "./plugin.js"
+}
