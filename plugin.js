@@ -10,7 +10,7 @@ module.exports = {
       cogear.baseUrl = webpackConfig.mode === "production" ? BASE_URL : "/";
     }),
     cogear.on("build.page.writeAfter", ([page, html]) => {
-      html = html.replace(/(<link rel="stylesheet" href="|<script src=")\//g, `$1${BASE_URL}`);
+      html = html.replace(/(<link rel="stylesheet" href="|<script src=")\//g, `$1${cogear.baseUrl}`);
       page.writePath = path.join(cogear.options.output, page.path);
       fs.writeFileSync(page.writePath, html);
     })
